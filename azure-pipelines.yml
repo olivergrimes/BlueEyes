@@ -9,11 +9,6 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  Major: '1'
-  Minor: '0'
-  Patch: '0'
-
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
@@ -27,13 +22,14 @@ steps:
     command: 'build'
     projects: '**/*.csproj'
 
-- task: NuGetCommand@2
+- task: DotNetCoreCLI@2
   inputs:
-    command: pack
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
+    command: 'pack'
+    packagesToPack: '**/BlueEyes.csproj'
+    versioningScheme: 'byPrereleaseNumber'
+    majorVersion: '1'
+    minorVersion: '0'
+    patchVersion: '0'
 
 - task: DotNetCoreCLI@2
   inputs:

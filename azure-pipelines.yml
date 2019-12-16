@@ -10,6 +10,11 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  Major: '1'
+  Minor: '0'
+  Patch: '0'
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
@@ -22,3 +27,11 @@ steps:
   inputs:
     command: 'build'
     projects: '**/*.csproj'
+
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    versioningScheme: byBuildNumber
+    majorVersion: '$(Major)'
+    minorVersion: '$(Minor)'
+    patchVersion: '$(Patch)'

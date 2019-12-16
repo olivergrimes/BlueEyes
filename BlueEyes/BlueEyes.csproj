@@ -4,12 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <PackageId>GorillaDotNet</PackageId>
-    <Authors>Josh Clark, Oliver Grimes</Authors>
-    <Company />
+    <Authors>Oliver Grimes</Authors>
+    <Company>Oliver Grimes</Company>
     <Product>GorillaDotNet</Product>
     <PackageProjectUrl>https://github.com/olivergrimes/BlueEyes</PackageProjectUrl>
     <RepositoryUrl>https://github.com/olivergrimes/BlueEyes</RepositoryUrl>
-    <Copyright>Copyright © Josh Clark 2017</Copyright>
+    <Copyright></Copyright>
     <Description>A .NET implementation of Facebook's Gorilla time series compression algorithm</Description>    
   </PropertyGroup>
 

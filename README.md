@@ -1,5 +1,17 @@
-# BlueEyes [![Build status](https://ci.appveyor.com/api/projects/status/pihbs28aoiuytdjn?svg=true)](https://ci.appveyor.com/project/joshclark/blueeyes/history) [![NuGet Version](http://img.shields.io/nuget/v/BlueEyes.svg?style=flat)](https://www.nuget.org/packages/BlueEyes/) 
+This is a fork of the excellent [joshclark/BlueEyes](https://github.com/joshclark/BlueEyes) repository for timeseries compression using Facebook's "Gorilla" encoding.
 
+The following updates are available in this fork:
+
+- Negative value handling
+- Bug fix for some initial values
+- Fixed incorrect control bit usage
+- Upgdated to netcore3.0
+
+Due to inactivity on the main branch, I've published this fork on a new Nuget feed:
+
+[![Nuget](https://img.shields.io/nuget/v/GorillaDotNet)](https://www.nuget.org/packages/GorillaDotNet/)
+
+---
 
 A .NET implementation of the [paper “Gorilla: A Fast, Scalable, In-Memory Time Series Database”](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf) 
 

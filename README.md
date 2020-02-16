@@ -4,7 +4,7 @@ The following updates are available in this fork:
 
 - Negative value handling
 - Bug fix for some initial values
-- Fixed incorrect control bit usage
+- Aligned control bit usage with paper linked below
 - Upgdated to netcore3.0
 
 Due to inactivity on the main branch, I've published this fork on a new Nuget feed:

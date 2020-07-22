@@ -5,9 +5,9 @@ The following updates are available in this fork:
 - Negative value handling
 - Bug fix for some initial values
 - Aligned control bit usage with paper linked below
-- Upgdated to netcore3.0
+- Updated to netcore3.0
 
-Due to inactivity on the main branch, I've published this fork on a new Nuget feed:
+Due to inactivity on the main branch, I've published this fork as a new Nuget package:
 
 [![Nuget](https://img.shields.io/nuget/v/GorillaDotNet)](https://www.nuget.org/packages/GorillaDotNet/)
 
